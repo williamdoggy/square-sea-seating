@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+#seatMap {
+  margin-top: 20px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2px;
+  cursor: pointer;
+}
+
+.reserved {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.selected {
+  background-color: lightgreen;
+}
+
+.stair {
+  visibility: hidden;
+}
