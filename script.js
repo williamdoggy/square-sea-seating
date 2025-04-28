@@ -1,4 +1,4 @@
-const API_URL = 'https://script.google.com/macros/s/AKfycbz35t_fHy5OVe_EBfbzUtbWu61oVal2UMHcDrjZnQeTUdF8hXa_urUqmpJpGlGsgUpZgA/exec';
+const API_URL = 'https://script.google.com/macros/s/AKfycbxMD9rFNGxQ5Bh7n9Mw09y0dThEXFW9Ux-nFAiSLitXeOgYXDmfd3K-YjJ2uk5PcN_LaA/exec';
 
 const seatingChart = [
   ["A1", "A2", "A3", "stair", "A4", "A5", "A6", "A7", "A8", "A9", "stair", "A10", "A11", "A12", "A13", "A14", "A15", "stair", "A16", "A17", "A18", "A19"],
