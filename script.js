@@ -53,17 +53,16 @@ const form = document.getElementById('seatingForm');
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   const formData = new FormData(form);
-  const data = Object.fromEntries(formData.entries());
+  const params = new URLSearchParams(formData);
   fetch(API_URL, {
     method: 'POST',
-    body: JSON.stringify(data),
-    headers: { 'Content-Type': 'application/json' }
+    body: params // 不用 JSON，直接送 form data
   }).then(response => response.json())
     .then(result => {
       if (result.result === 'success') {
         form.style.display = 'none';
         document.getElementById('confirmation').style.display = 'block';
-        document.getElementById('seatInfo').innerText = data.seat + ' (' + data.date + ')';
+        document.getElementById('seatInfo').innerText = formData.get('seat') + ' (' + formData.get('date') + ')';
       }
     });
 });
